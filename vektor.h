@@ -8,11 +8,13 @@
 #include <ctype.h>
 
 //checks for the allocation result macro
-#define ALLOC_CHECK(x) if (x == NULL) {printf("Error allocating memory.\n\n"); return NULL;}
+#define ALLOC_CHECK(x) if (x == NULL) { printf("Error allocating memory.\n\n"); return NULL; }
 //newline macro
 #define NEW_LN printf("\n")
 //error print macro
 #define ERROR_MSG(x) printf(x); NEW_LN; return -1;
+//macro per unsigned int
+#define UINT unsigned int
 
 
 //DISCLAMER the letter the start of the function name indicates the type, f indicates float, i indicates integer, c indicates char. 
